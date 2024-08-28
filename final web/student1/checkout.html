@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Checkout</h1>
+        </header>
+        <main>
+            <section class="checkout">
+                <h2>Contact Details</h2>
+                <form id="checkout-form">
+                    <!-- Contact Details Form -->
+                    <div class="form-section">
+                        <h3>Contact Details</h3>
+                        <label for="first-name">First Name <span>*</span>:</label>
+                        <input type="text" id="first-name" required>
+                        <label for="surname">Surname <span>*</span>:</label>
+                        <input type="text" id="surname" required>
+                        <label for="phone">Phone Number <span>*</span>:</label>
+                        <input type="tel" id="phone" required>
+                        <label for="email">Email Address <span>*</span>:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <!-- Billing Address Form -->
+                    <div class="form-section">
+                        <h3>Billing Address</h3>
+                        <label for="address1">Address Line 1 <span>*</span>:</label>
+                        <input type="text" id="address1" required>
+                        <label for="address2">Address Line 2:</label>
+                        <input type="text" id="address2">
+                        <label for="address3">Address Line 3:</label>
+                        <input type="text" id="address3">
+                        <label for="city">Town/City <span>*</span>:</label>
+                        <input type="text" id="city" required>
+                        <label for="state">State/County <span>*</span>:</label>
+                        <input type="text" id="state" required>
+                        <label for="zip">Postcode/Zip code <span>*</span>:</label>
+                        <input type="text" id="zip" required>
+                        <label for="country">Country <span>*</span>:</label>
+                        <select id="country" required>
+                            <option value="">Select from list</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+
+                    <!-- Payment Information Form -->
+                    <div class="form-section">
+                        <h3>Payment Information</h3>
+                        <label for="card-number">Card Number <span>*</span>:</label>
+                        <input type="text" id="card-number" required>
+                        <label for="card-name">Cardholder Name <span>*</span>:</label>
+                        <input type="text" id="card-name" required>
+                        <label for="expiry">Expiry Date (MM/YY) <span>*</span>:</label>
+                        <input type="text" id="expiry" required>
+                        <label for="ccv">CCV <span>*</span>:</label>
+                        <input type="text" id="ccv" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-section">
+                        <button type="submit" class="complete-purchase">Complete Purchase</button>
+                    </div>
+                </form>
+                <p id="confirmation-message" style="display: none;">Thank you! Your order has been placed successfully.</p>
+            </section>
+        </main>
+        <!-- Back to Shop Button -->
+        <button onclick="window.location.href='shop.html'" class="back-to-shop">Back to Shop</button>
+    </div>
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you can add additional validation and processing logic
+            let formIsValid = true; // Assume form is valid; add validation logic here
+
+            // If form is valid, show confirmation message
+            if (formIsValid) {
+                document.getElementById('confirmation-message').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

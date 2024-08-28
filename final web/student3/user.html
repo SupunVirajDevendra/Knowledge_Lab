@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesnav.css">
+    <title>User Profile</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>Knowledge Lab - User Profile</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/student2/html/home.html">Home</a></li>
+                    <li><a href="/student4/gallery.html">Gallery</a></li>
+                    <li><a href="/student1/shop.html">Shop</a></li>
+                    <li><a href="/student4/sitemap.html">Site Map</a></li>
+                    <li><a href="about.html">About Us</a></li>         
+                    <li><a href="/student2/html/feedback.html">Feedback</a></li>
+                    <li class="active"><a href="user.html">User</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1 style="padding-bottom: 50px;"></h1>
+    <div id="profile">
+        <h1>User Profile</h1>
+        <div class="progress-bar">
+            <div class="progress" id="progress">0%</div>
+        </div>
+        <div id="startButton">
+            <button onclick="getUserDetails()">Start</button>
+        </div>
+        <div id="editButton" style="display: none;">
+            <button onclick="editForm()">Edit Profile</button>
+        </div>
+        <div id="buttonSection1" style="display: none;">
+            <button onclick="getBackgroundDetails()">Next</button>
+        </div>
+        <div id="buttonSection2" style="display: none;">
+            <button onclick="getAccountSignup()">Next</button>
+        </div>
+        <div id="buttonSection3" style="display: none;">
+            <button onclick="getFinalSection()">Next</button>
+        </div>
+        <div id="personalDetails" class="section">
+            <h2>Personal Details</h2>
+            <div id="personalDetailsContent"></div>
+        </div>
+        <div id="educationalBackground" class="section">
+            <h2>Educational Background</h2>
+            <div id="educationalBackgroundContent"></div>
+        </div>
+        <div id="accountSignup" class="section">
+            <h2>Sign up</h2>
+            <div id="accountSignupContent"></div>
+        </div>
+        <div id="submit" style="display: none;">
+            <button onclick="submitAlert()">Submit</button>
+        </div>
+    <script src="script.js"></script>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Knowledge Lab. All rights reserved.</p>
+            <div class="footer-links">
+                <p>Page Editors</p>
+                <a href="/student1/editor.html">Student 1 - Sheruka</a>
+                <a href="/student2/html/editor.html">Student 2 - Supun</a>
+                <a href="editor.html">Student 3 - Dinuka</a>
+                <a href="/student4/editor1.html">Student 4 - Nimasara</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(to bottom, rgba(255, 76, 5, 0.9), rgba(255, 255, 255, 0.63));
+    color: #333;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+}
+.sitemap {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    margin-bottom:100px;
+    
+}
+
+rect.button {
+    fill: #ff7a63;
+    transition: fill 0.3s;
+}
+
+rect.button:hover {
+    fill: #999999;
+    
+}
+
+line {
+    stroke: #000000;
+    stroke-width: 2px;
+}
+
+.sitemap svg .background {
+    rx: 20;
+    ry: 20;
+}
+
+/* header */
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    font-size: 20px;
+}
+
+/* Header Styles */
+header {
+    margin-left: -1rem;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 110%;
+    top: 0;
+    background: black;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration:none;
+    padding: 0.5rem;
+}
+
+header nav ul li a:hover {
+    background: #003399;
+    border-bottom: 2px solid #ff6600;
+}
+
+header nav ul li.active a {
+    border-bottom: 2px solid #ff6600;
+}

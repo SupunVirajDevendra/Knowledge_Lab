@@ -1,0 +1,174 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(255, 76, 5, 0.9), rgba(255, 255, 255, 0.63));
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 3;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product .options {
+    margin: 10px 0;
+}
+
+.product .add-to-cart {
+    background-color: #55abe1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.order-summary {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1;
+}
+
+.order-summary h2 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+}
+
+.basket-items {
+    margin-bottom: 20px;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.basket-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.basket-item p {
+    margin: 0;
+}
+
+.total {
+    font-size: 1.25em;
+    margin: 20px 0;
+}
+
+.clear-basket,
+.checkout-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.checkout-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkout-form button {
+    background-color: #1792a2;
+}
+
+
+.product img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.product:hover img {
+    transform: scale(2);
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+.product img {
+    transition: transform 0.2s ease;
+}
+
+.product:hover img {
+    transform-origin: center center;
+}
+
+.product .zoom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

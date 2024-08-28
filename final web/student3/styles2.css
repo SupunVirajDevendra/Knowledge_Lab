@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(255, 76, 5, 0.9), rgba(255, 255, 255, 0.63));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+
+.team-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container h1 {
+    margin-bottom: 20px;
+}
+
+.team-member {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.details {
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-align: right;
+}
+
+.team-member:hover .thumbnail,
+.team-member:focus .thumbnail {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover .thumbnail img,
+.team-member:focus .thumbnail img {
+    opacity: 0.7;
+}
+
+.team-member:hover .details,
+.team-member:focus .details {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+footer {
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

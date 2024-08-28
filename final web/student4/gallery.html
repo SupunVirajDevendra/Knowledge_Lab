@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thambnail Images</title>
+        <link rel="StyleSheet" href="gallery.css">
+        <link rel="stylesheet" href="stylesnav.css">
+       
+    </head>
+    <body class="bodyg">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                    <span>Knowledge Lab - Gallery</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/student2/html/home.html">Home</a></li>
+                        <li class="active"><a href="/student4/gallery.html">Gallery</a></li>
+                        <li><a href="/student1/shop.html">Shop</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="/student3/about.html">About Us</a></li>         
+                        <li><a href="/student2/html/feedback.html">Feedback</a></li>
+                        <li><a href="/student3/user.html">User</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+		<br><br><br>
+        <h1 id="h1">World Famous Paintings</h1><br>
+
+        <div class="backGround">
+            <label id="backgroundColorLabel" for="backgroundColor">Choose a background color :</label>
+            <select name="backgroundColor" id="backgroundColor" onchange="backgroundColorChange(this.value)">
+            <option value="#ffffff">White</option>
+            <option value="#808080">Grey</option>
+            <option value="#FFFDD0">Yellow</option>
+            </select>
+        </div>
+
+        <div class="textColor">
+            <label id="textColorLabel" for="textColor">Choose a text color :</label>
+            <select name="textColor" id="textColor" onchange="textColorChange(this.value)">
+            <option value="#000000">Black</option>
+            <option value="#8b0000">Red</option>
+            <option value="#00008b">Blue</option>
+            </select>
+        </div>
+
+        <!--Images-->
+        <div class="imageSet">
+            <ul class="imageGrid">
+                <li><a href="pic"><img id="image1" src="pic1.png" alt="Students in Classrooms" ></a></li>
+                <li><a href="pic"><img id="image2" src="pic2.png" alt="Teachers and Mentors" ></a></li>
+                <li><a href="pic"><img id="image3" src="pic3.png" alt="Modern Learning Environments" ></a></li>
+                <li><a href="pic"><img id="image4" src="pic4.png" alt="Extracurricular Activities" ></a></li>
+                <li><a href="pic"><img id="image5" src="pic5.png" alt="Community Engagement"></a></li> 
+                
+            </ul>
+        </div>
+
+        <!--Preview Image-->
+        <div class="previewImage">
+            <img class="image" src="pic1.png" alt="Students in Classrooms">
+        </div>
+
+        <!--Description-->
+       <div class="description">
+            <h2 id="title">Students in Classrooms</h2>
+            <p id="imageDescription">Photos of diverse students actively engaging in learning activities, such as participating in discussions, listening to lectures, or working on assignments. Images can also show students collaborating on projects or in group discussions, emphasizing teamwork and peer learning.</p>
+        </div>
+        <!--editor page-->
+        <div class="editorPage">
+            <a id="editorPageA" href="editor1.html">Editor Page</a>
+        </div>
+
+		
+
+        <script>
+        function backgroundColorChange(value){
+                document.body.style.backgroundColor = value;
+        }
+
+        function textColorChange(value) {
+            document.getElementById("h1").style.color = value;
+            document.getElementById("backgroundColorLabel").style.color = value;
+            document.getElementById("textColorLabel").style.color = value;
+            document.getElementById("title").style.color = value;
+            document.getElementById("imageDescription").style.color = value;
+            document.getElementById("editorPageA").style.color = value;
+        }
+
+        //functions for preview image and to change description
+        document.getElementById("image1").addEventListener("mouseover", function(){
+            document.images[6].src="pic1.png";
+            document.getElementById("title").innerHTML = "Students in Classrooms";
+            document.getElementById("imageDescription").innerHTML = "Photos of diverse students actively engaging in learning activities, such as participating in discussions, listening to lectures, or working on assignments. Images can also show students collaborating on projects or in group discussions, emphasizing teamwork and peer learning.";
+        });
+        document.getElementById("image2").addEventListener("mouseover", function(){
+            document.images[6].src="pic2.png";
+            document.getElementById("title").innerHTML = "Teachers and Mentors";
+            document.getElementById("imageDescription").innerHTML = "Pictures of teachers and mentors interacting with students, providing guidance, and facilitating learning. These images can showcase personalized teaching moments, one-on-one tutoring sessions, and the supportive role of educators in the classroom.";
+        });
+        document.getElementById("image3").addEventListener("mouseover", function(){
+            document.images[6].src="pic3.png";
+            document.getElementById("title").innerHTML = "Modern Learning Environments";
+            document.getElementById("imageDescription").innerHTML = "Photos of contemporary, well-equipped classrooms and learning spaces featuring modern furniture, ample lighting, and organized layouts. Images of digital tools and resources, such as tablets, laptops, and interactive whiteboards being used in education, highlight the integration of technology in learning.";
+        });
+        document.getElementById("image4").addEventListener("mouseover", function(){
+            document.images[6].src="pic4.png";
+            document.getElementById("title").innerHTML = "Extracurricular Activities";
+            document.getElementById("imageDescription").innerHTML = "Pictures of students participating in extracurricular activities like sports, arts, music, and drama, showing a well-rounded educational experience. Images of school clubs or organizations can demonstrate the variety of opportunities available to students beyond academics.";
+        });
+        document.getElementById("image5").addEventListener("mouseover", function(){
+            document.images[6].src="pic5.png";
+            document.getElementById("title").innerHTML = "Community Engagement";
+            document.getElementById("imageDescription").innerHTML = "Photos showcasing community involvement in schools, such as parents, volunteers, and local organizations contributing to educational initiatives. These images emphasize the collaborative efforts between the school and the community to enhance the learning environment.";
+        });
+		
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+				if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+					document.getElementById("navigationBar").style.top = "0%";
+				} else {
+				document.getElementById("navigationBar").style.top = "12%";
+				}
+			}
+        </script>
+		<!--footer-->
+		<footer>
+        <div class="container">
+            <p>&copy; 2024 Knowledge Lab. All rights reserved.</p>
+            <div class="footer-links">
+                <p>Page Editors</p>
+                <a href="/student1/editor.html">Student 1 - Sheruka</a>
+                <a href="/student2/html/editor.html">Student 2 - Supun</a>
+                <a href="/student3/editor.html">Student 3 - Dinuka</a>
+                <a href="editor1.html">Student 4 - Nimasara</a>
+            </div>
+        </div>
+        </footer>
+        <script src="javascript/external.js"></script>
+    </body>
+</html>

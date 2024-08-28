@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: black;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+.editor{
+    margin: 40px auto 0;
+    text-align: center;
+    border: 1px solid;
+    background-color: white;
+    width: fit-content;
+}
+
+.details{
+    font-size:large;
+    font-style:normal;
+    font-weight:bold;
+    border-bottom: 5px solid #1b3152;
+}
+
+.tasks{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+a{
+    color:#1b3152;
+    font-weight: normal;
+    font-style: italic;
+}
+
+a:hover{
+    color: red;
+}

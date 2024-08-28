@@ -1,0 +1,76 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    line-height: 1.6;
+    background-color: #f79259;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, rgba(255, 76, 5, 0.9), rgba(255, 255, 255, 0.63));
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #030303;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.editor-details {
+    background-color: #f7f0d2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.editor-details p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.task {
+    margin-bottom: 40px;
+}
+
+.task h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ff4800;
+}
+
+.task p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.task a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.task a:hover {
+    text-decoration: underline;
+}
